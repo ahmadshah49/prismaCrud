@@ -21,8 +21,9 @@ var requestOptions = {
 const data = await fetch(
   "https://prisma-crud-s9js.vercel.app/api/data",
   requestOptions
-); return data
-alert("Deleted")
+  ); 
+  alert("Deleted")
+  return data;
     } catch (error) {
         console.log("error",error);
     }
