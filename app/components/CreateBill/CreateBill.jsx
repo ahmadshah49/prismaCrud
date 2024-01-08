@@ -31,8 +31,8 @@ const CreateBill = ({ isOpen, onClose }) => {
         "https://prisma-crud-s9js.vercel.app/api/data",
         requestOptions
       );
-      alert("data Created");
       return data;
+      alert("data Created");
     } catch (error) {
       console.log("error", error);
     }
