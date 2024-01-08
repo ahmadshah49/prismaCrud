@@ -7,17 +7,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
-
-
 model data {
-  id      String   @id @default(auto()) @map("_id") @db.ObjectId
-  name    String?
-  email   String   @unique
-  phone   Int 
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId
+  name     String?
+  email    String  @unique
+  phone    Int
   location String?
-  hobby String?
+  hobby    String?
 }
-
-
-
-

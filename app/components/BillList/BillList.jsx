@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
+import EditButton from "../EditButton/EditButton";
+import DltButton from "../DeleteButton/DltButton";
 
 const BillList = ({ data }) => {
   return (
@@ -27,12 +29,10 @@ const BillList = ({ data }) => {
               <td>{data.location}</td>
               <td>{data.hobby}</td>
               <td>
-                <Button title={"Edit"} />
+                <EditButton id={data.id} title={""} />
               </td>
               <td>
-                <button className="py-2 px-4 bg-green-600 rounded-md my-2 font-bold text-white">
-                  Delete
-                </button>
+                <DltButton title={"Delete"} id={data.id} />
               </td>
             </tr>
           ))}
