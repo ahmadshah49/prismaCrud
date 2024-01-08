@@ -62,7 +62,6 @@ const CreateBill = ({ isOpen, onClose }) => {
         <input
           type="text"
           name="name"
-          placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="py-3 mx-10 border rounded-md border-black outline-none px-2"
@@ -72,7 +71,6 @@ const CreateBill = ({ isOpen, onClose }) => {
         <input
           type="email"
           name="id"
-          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="py-3 mx-10 border rounded-md border-black outline-none px-2"
@@ -82,7 +80,6 @@ const CreateBill = ({ isOpen, onClose }) => {
         <input
           type="number"
           name="phone"
-          placeholder="Phone"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           className="py-3 mx-10 border rounded-md border-black outline-none px-2"
@@ -92,7 +89,6 @@ const CreateBill = ({ isOpen, onClose }) => {
         <input
           type="text"
           name="location"
-          placeholder="Location"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           className="py-3 mx-10 border rounded-md border-black outline-none px-2"
@@ -102,7 +98,6 @@ const CreateBill = ({ isOpen, onClose }) => {
         <input
           type="text"
           name="hobby"
-          placeholder="Hobby"
           value={hobby}
           onChange={(e) => setHobby(e.target.value)}
           className="py-3 mx-10 border rounded-md border-black outline-none px-2"
