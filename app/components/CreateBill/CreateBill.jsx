@@ -7,7 +7,7 @@ const CreateBill = ({ isOpen, onClose }) => {
   const [phone, setPhone] = useState("");
   const [location, setLocation] = useState("");
   const [hobby, setHobby] = useState("");
-  const submitHandler = () => {
+  const submitHandler = async () => {
     try {
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
@@ -27,7 +27,7 @@ const CreateBill = ({ isOpen, onClose }) => {
         redirect: "follow",
       };
 
-      fetch(
+      const data = await fetch(
         "https://prisma-crud-s9js-j0o4aesh2-ahmadshah49s-projects.vercel.app/api/data",
         requestOptions
       );

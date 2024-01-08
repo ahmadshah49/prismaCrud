@@ -2,7 +2,7 @@
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const DltButton = ({id}) => {
-const onDelteHandler=()=>{
+const onDelteHandler=async ()=>{
     try {
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
@@ -18,7 +18,7 @@ var requestOptions = {
   redirect: "follow",
 };
 
-fetch(
+const data=await fetch(
   "https://prisma-crud-s9js-j0o4aesh2-ahmadshah49s-projects.vercel.app/api/data",
   requestOptions
 );
