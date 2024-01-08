@@ -18,7 +18,10 @@ var requestOptions = {
   redirect: "follow",
 };
 
-fetch("https://prisma-crud-s9js.vercel.app/api/data", requestOptions);
+fetch(
+  "https://prisma-crud-s9js-j0o4aesh2-ahmadshah49s-projects.vercel.app/api/data",
+  requestOptions
+);
 alert("Deleted")
     } catch (error) {
         console.log("error",error);
