@@ -27,7 +27,10 @@ const EditBill = ({ isOpen, onClose, id }) => {
         redirect: "follow",
       };
 
-      fetch(`http://localhost:3000/api/data?id=${id}`, requestOptions);
+      fetch(
+        `https://prisma-crud-s9js.vercel.app/api/data?id=${id}`,
+        requestOptions
+      );
     } catch (error) {}
 
     setName("");

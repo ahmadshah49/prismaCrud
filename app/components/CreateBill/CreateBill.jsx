@@ -27,7 +27,7 @@ const CreateBill = ({ isOpen, onClose }) => {
         redirect: "follow",
       };
 
-      fetch("http://localhost:3000/api/data", requestOptions);
+      fetch("https://prisma-crud-s9js.vercel.app/api/data", requestOptions);
       alert("data Created");
     } catch (error) {
       console.log("error", error);
@@ -35,9 +35,6 @@ const CreateBill = ({ isOpen, onClose }) => {
     if (!name || !email || !phone || !location || !hobby) {
       alert("please fill all values");
       return;
-    }
-    {
-      console.log(name, email, phone, location, hobby);
     }
 
     setName("");

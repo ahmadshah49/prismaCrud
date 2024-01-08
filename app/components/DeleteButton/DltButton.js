@@ -18,7 +18,7 @@ var requestOptions = {
   redirect: "follow",
 };
 
-fetch("http://localhost:3000/api/data", requestOptions)
+fetch("https://prisma-crud-s9js.vercel.app/api/data", requestOptions);
 alert("Deleted")
     } catch (error) {
         console.log("error",error);
