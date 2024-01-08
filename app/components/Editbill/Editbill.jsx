@@ -31,6 +31,7 @@ const EditBill = ({ isOpen, onClose, id }) => {
         `https://prisma-crud-s9js.vercel.app/api/data?id=${id}`,
         requestOptions
       );
+      return data;
     } catch (error) {}
 
     setName("");

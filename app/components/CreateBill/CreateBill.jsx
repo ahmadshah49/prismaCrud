@@ -32,6 +32,7 @@ const CreateBill = ({ isOpen, onClose }) => {
         requestOptions
       );
       alert("data Created");
+      return data;
     } catch (error) {
       console.log("error", error);
     }
